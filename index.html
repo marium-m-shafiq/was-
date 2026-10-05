@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="An interactive thought experiment about memory, identity, and reality."
+  >
+
+  <title>Was It Ever Real?</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Manrope:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="./style.css">
+  
+</head>
+
+<body>
+
+  <!-- Background noise -->
+  <div class="noise"></div>
+
+  <!-- Mouse glow -->
+  <div class="cursor-glow"></div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <a href="#top" class="logo">
+      WAS<span>?</span>
+    </a>
+
+    <button class="menu-btn" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="hero-orbit"></div>
+
+      <p class="eyebrow reveal">
+        AN EXPERIMENT IN PERCEPTION
+      </p>
+
+      <h1 class="reveal">
+        What if your<br>
+        <em>memories</em> aren't yours?
+      </h1>
+
+      <p class="hero-copy reveal">
+        You trust your mind because you have no other choice.
+      </p>
+
+      <a href="#question" class="scroll-cue reveal">
+        <span>SCROLL TO QUESTION</span>
+        <i>↓</i>
+      </a>
+
+    </section>
+
+
+    <!-- QUESTION -->
+    <section id="question" class="question section">
+
+      <div class="section-number">
+        01 / 04
+      </div>
+
+      <div class="question-inner">
+
+        <p class="eyebrow">
+          THE FIRST QUESTION
+        </p>
+
+        <h2>
+          How certain are you<br>
+          about <span>yesterday?</span>
+        </h2>
+
+        <p class="body-copy">
+          Close your eyes for three seconds.
+          Picture the last room you were in.
+          The light. The walls. Where you were standing.
+        </p>
+
+        <button class="reveal-btn" id="memoryBtn">
+          I REMEMBER
+        </button>
+
+        <p class="response" id="memoryResponse"></p>
+
+      </div>
+
+    </section>
+
+
+    <!-- MEMORY / IDENTITY -->
+    <section class="split section">
+
+      <div class="split-card">
+
+        <span class="card-tag">
+          MEMORY
+        </span>
+
+        <h3>
+          Remembering isn't replaying.
+        </h3>
+
+        <p>
+          Every time you remember something,
+          your brain reconstructs it.
+          The memory you recall today may not
+          be exactly the memory you had yesterday.
+        </p>
+
+      </div>
+
+
+      <div class="split-card dark-card">
+
+        <span class="card-tag">
+          IDENTITY
+        </span>
+
+        <h3>
+          So who are you?
+        </h3>
+
+        <p>
+          If your story changes every time you tell it,
+          perhaps identity isn't a fixed thing.
+          Perhaps it's the story you keep choosing to believe.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- CHOICE -->
+    <section class="choice section">
+
+      <div class="section-number">
+        02 / 04
+      </div>
+
+      <p class="eyebrow">
+        A SMALL TEST
+      </p>
+
+      <h2>
+        Which one feels<br>
+        more <em>true?</em>
+      </h2>
+
+
+      <div class="choice-grid">
+
+        <button class="choice-card" data-choice="A">
+
+          <span>A</span>
+
+          <strong>
+            I trust what I remember.
+          </strong>
+
+          <small>
+            Even when details change.
+          </small>
+
+        </button>
+
+
+        <button class="choice-card" data-choice="B">
+
+          <span>B</span>
+
+          <strong>
+            I trust what I can prove.
+          </strong>
+
+          <small>
+            Even when it feels wrong.
+          </small>
+
+        </button>
+
+      </div>
+
+
+      <p class="choice-result" id="choiceResult"></p>
+
+    </section>
+
+
+    <!-- VOID -->
+    <section class="void section">
+
+      <div class="void-content">
+
+        <div class="section-number">
+          03 / 04
+        </div>
+
+        <p class="eyebrow">
+          THE UNCOMFORTABLE PART
+        </p>
+
+        <h2>
+          What if the version<br>
+          of you reading this<br>
+          <span>isn't the original?</span>
+        </h2>
+
+        <div class="breathing-circle"></div>
+
+        <p class="body-copy">
+          You changed while reading this.
+          Not dramatically.
+          Maybe not visibly.
+          But your brain received something
+          it didn't have before.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+    <section class="final section">
+
+      <div class="section-number">
+        04 / 04
+      </div>
+
+      <p class="eyebrow">
+        LAST QUESTION
+      </p>
+
+      <h2>
+        Are you sure<br>
+        <em>you</em> chose to stay?
+      </h2>
+
+      <button class="final-btn" id="finalBtn">
+        DON'T ANSWER
+      </button>
+
+      <p class="final-message" id="finalMessage"></p>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div>
+      WAS? — AN INTERACTIVE THOUGHT EXPERIMENT
+    </div>
+
+    <div>
+      © 2026 / MADE TO MAKE YOU THINK
+    </div>
+
+  </footer>
+
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
